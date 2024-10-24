@@ -1,0 +1,48 @@
+/*Ajustar o conteiner geral n ajudará a centralizar a imagem ou o texto em si, é necessario fazer eles dentro de uma categoria propria aos mesmos,
+ como o "ul#CR-CatalogoCateogriasTopo .CR-Item img" ou ".CR-Item p". Tambem usar padding e margin para isso
+ */
+ul#CR-CatalogoCateogriasTopo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul#CR-CatalogoCateogriasTopo .CR-Item {
+  display: flex; /* Certifique-se de que a classe CR-Item seja um flex container */
+  flex-direction: column; /* Alinha a imagem e o texto em coluna */
+  margin: 0 30px;
+  color: black;
+  align-items: center;
+  text-align: center;
+  overflow: visible;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+ul#CR-CatalogoCateogriasTopo .CR-Item:hover {
+  padding: 10px;
+  box-shadow: 1px 1px 3px #555555;
+  transition: 0.5s;
+}
+
+ul#CR-CatalogoCateogriasTopo .CR-Item img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+ul#CR-CatalogoCateogriasTopo .CR-Item p {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+

@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+h1#Boas-Vindas {
+  color: black;
+  text-align: center;
+  width: auto;
+  padding: 10px;
+  margin: 50px auto;
+}
+
+div#TopoDaPagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+div#logo {
+  font-size: 15px;
+  padding: 0;
+  margin: 10px;
+  color: black;
+}
+
+div#BarraDePesquisa{
+  color: black;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+ul#CatalogoDeLugares {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  align-items: center;
+}
+
+ul#CatalogoDeLugares li {
+  color: black;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+}
+
+ul#CatalogoDeLugares li:hover {
+  padding: 10px;
+  box-shadow: 4px 4px 10px lightgray;
+  transition: 0.5s;
+  background-color: #d1d1d1;
+}
+
+h2.TitulosEDivisoes {
+  color: black;
+  text-align: left;
+  margin: 50px;
+}
+div#CatalogoDeProdutos {
+  text-align: left;
+  margin: 100px auto;
+  max-width: max-content;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  word-spacing: 50px;
+  font-size: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+div#img {
+  display: flex; /* Garantir que os itens fiquem na mesma linha */
+  gap: 50px; /* Espaçamento entre os itens */
+}
+
+div#CatalogoDeProdutos #img .Categorias {
+  margin: 0 50px;
+  color: black;
+  text-align: center;
+  overflow: visible;
+}
+
+div#CatalogoDeProdutos #img .Categorias img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 10px;
+  border: 1px solid black;
+  border-radius: 250px;
+}
+
+div#CatalogoDeProdutos #img .Categorias:hover {
+  box-shadow: 2px 2px 5px lightgray;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+div#CatalogoDeProdutos .SetasEsquerda,
+div#CatalogoDeProdutos .SetasDireita {
+  font-size: 20px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+div#CatalogoDeProdutos .SetasEsquerda {
+  left: 30px;
+}
+div#CatalogoDeProdutos .SetasDireita {
+  right: 30px;
+}
+
+div#ConteinerFiltrosCL {
+  display: block;
+  text-align: center;
+  line-height: 150%;
+}
+
+ul#CatalogoDeLojas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 2400px;
+  width: 100%;
+  color: black;
+}
+
+ul#CatalogoDeLojas li.restaurantes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+ul#CatalogoDeLojas li.restaurantes:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px;
+  width: 400px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: 0.5s;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul#CatalogoDeLojas .restaurantes img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+ul#CatalogoDeLojas .restaurantes .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul#CatalogoDeLojas .restaurantes .info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+ul#CatalogoDeLojas .restaurantes .info p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: gray;
+}
+
+div.MostrarMais {
+  text-align: center;
+  color: black;
+  margin-bottom: 50px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+div.MostrarMais:hover{
+  background-color:red;
+  color: white;
+  transition: 0.5s;
+}
+
+ul#Cabeçalho-Titulos {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 10px;
+  color: black;
+  box-shadow: gray 0px 0px 2px 0px;
+}
+
+/*Feito com chatgpt */
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre as colunas */
+  color: darkgray;
+}
+
+footer ul {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+footer ul li {
+  margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+}
+
+footer ul li:first-child {
+  font-weight: bold; /* Deixa o primeiro item de cada lista em negrito */
+  margin-bottom: 15px; /* Espaço extra abaixo do título */
+}
+
+footer ul li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: black; /* Cor do texto */
+}
+
+footer ul li a:hover {
+  text-decoration: underline; /* Sublinha o texto quando o mouse passa por cima */
+}
+
+
